@@ -1,30 +1,43 @@
-PASOS PARA EJECUTAR EL PROYECTO
-1-abrir xampp y iniciar los servicios de apache y mysql
-2-Ir a un navegador y poner localhost:80 
-3-Irse a la pestaña de phpMyAdmin
-4-crearse una nueva base de datos con nombre de su preferencia
-5-irse a la parte que dice SQL
-6-Pegar la consulta sql que se encuentra en el archivo bd.sql o lo siguiente:
+
+**PASOS PARA EJECUTAR EL PROYECTO**  
+
+1. Abrir XAMPP e iniciar los servicios de Apache y MySQL.  
+2. Ir a un navegador y escribir `localhost:80`.  
+3. Acceder a la pestaña de **phpMyAdmin**.  
+4. Crear una nueva base de datos con un nombre de tu preferencia.  
+5. Ir a la pestaña **SQL**.  
+6. Pegar la consulta SQL que se encuentra en el archivo `bd.sql` o ejecutar lo siguiente:  
+
 CREATE TABLE `estudiante` (
-  `id` int(11) NOT NULL,
-  `nombre` varchar(100) NOT NULL,
-  `apellidoPaterno` varchar(140) NOT NULL,
-  `apellidoMaterno` varchar(140) NOT NULL,
-  `correo` varchar(100) NOT NULL,
-  `Ci` text NOT NULL
+  `id` INT(11) NOT NULL,
+  `nombre` VARCHAR(100) NOT NULL,
+  `apellidoPaterno` VARCHAR(140) NOT NULL,
+  `apellidoMaterno` VARCHAR(140) NOT NULL,
+  `correo` VARCHAR(100) NOT NULL,
+  `Ci` TEXT NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-7-Darle  click en continuar
-8-Irse nuevamente a la pestaña de SQL y pegar lo siguiente
+
+
+7. Hacer clic en **Continuar**.  
+8. Volver a la pestaña **SQL** y pegar lo siguiente:  
+
+
 INSERT INTO `estudiante` (`id`, `nombre`, `apellidoPaterno`, `apellidoMaterno`, `correo`, `Ci`) VALUES
-(1, 'Juan', 'Martinez', 'Sanjines', 'juanMS@gmail.com', '2323234343'),
-(2, 'Daniela', 'Quisbert', 'Sanjinez', 'daniel2@gmail.com', '223232323323'),
-(3, 'juan', 'dasd', 'dsad', 'dasdsd@dad', '32332'),
+(1, 'Juan', 'Martínez', 'Sanjinés', 'juanMS@gmail.com', '2323234343'),
+(2, 'Daniela', 'Quisbert', 'Sanjinés', 'daniel2@gmail.com', '223232323323'),
+(3, 'Juan', 'Dasd', 'Dsad', 'dasdsd@dad', '32332'),
 (4, 'Carla', 'Mejillas', 'Taliz', 'carlaM@gmail.com', '3233232'),
-(5, 'Mario', 'Mamani', 'Soliz', 'MArioM@gmail.com', '4344443434');
-9- Darle en continuar
-10-Una ves realizado los pasos anteriores descargar la carpeta del github en formato zip y descomprimir
-11-Abrir en su editor de codigo (VISUAL STUDIO,SUBLIME TEXT)
-12-Irse a database y configurar la conexion tomar en cuenta el nombre de la base de datos para realizar la conexion
-13-Irse al link del DRIVE(POWER POINT) y abrir el pdf MANUAL DE CONEXION A LA BD Y EJEMPLO
-14- Hacer los pasos ,solo hasta el PASO 4
-15-Una ves echo esos pasos ejecutar el comando node index.js
+(5, 'Mario', 'Mamani', 'Soliz', 'MarioM@gmail.com', '4344443434');
+
+
+9. Hacer clic en **Continuar**.  
+10. Descargar la carpeta del repositorio de GitHub en formato ZIP y descomprimirla.  
+11. Abrir el proyecto en un editor de código (Visual Studio Code, Sublime Text, etc.).  
+12. Ir al archivo de configuración de la base de datos y asegurarse de que la conexión sea correcta, tomando en cuenta el nombre de la base de datos creada.  
+13. Acceder al enlace de Google Drive y abrir el **PDF "Manual de conexión a la BD y ejemplo"**.  
+14. Seguir los pasos indicados en el manual **hasta el PASO 4**.  
+15. Una vez completados los pasos anteriores, ejecutar el siguiente comando en la terminal:  
+
+node index.js
+
+
